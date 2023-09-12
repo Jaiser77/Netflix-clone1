@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111 ;
+  }
+  
+  .row__poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 150px;
+    max-width: 200px;
+    margin-right: 10px;
+    transition: transform 450ms;
+  }
+  
+  .row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+  }
+  
+  .row__poster:hover {
+    transform: scale(1.08);
+  }
+  
+  .row__posters::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .row__posterLarge {
+    max-height: 250px;
+  }
+  
+  .row__posterLarge:hover {
+    transform: scale(1.09);
+  }
+  
+  
+  .row {
+    color: white;
+    margin-left: 20px;
+  }
+  
+  /* banner */
+  .banner {
+    
+    background-image: url('images/imgmoneyheist.jpg');
+    background-size:100%;
+    height: max-content;
+    background-repeat: no-repeat;
+    color: white
+    
+    
+  }
+  
+  .banner__contents {
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+  }
+  
+  .banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+  }
+  
+  .banner__description {
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    max-width: 360px;
+    height: 180px;
+  }
+  
+  .banner__button {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.5);
+  }
+  
+  .banner__button:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+  }
+  
+  .banner--fadeBottom {
+    margin-top: 145px;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+  }
+  
+  /* nav */
+  
+
+  .nav__logo {
+    margin-left: 25px;
+    width: 100px;
+   
+    object-fit: contain;
+    cursor: pointer;
+  }
+  
+  .nav__avatar {
+    width: 30px;
+    object-fit: contain;
+    margin-right: 300px;
+    cursor: pointer;
+  }
+
+  .nav-left {
+    display: flex; 
+    flex-direction: row;
+    align-items: left; 
+    margin-right: 700px;
+    
+  }
+
+  .nav_name{
+    color: #fff;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .nav_home{
+    color: #fff;
+    text-align: left;
+    padding-right: 15px;
+    padding-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .nav_browse{
+    color: #fff;
+    text-align: left;
+    white-space: nowrap;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .nav_mylist{
+    color: #fff;
+    text-align: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    white-space: nowrap;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .nav_news{
+    color: #fff;
+    text-align: left;
+    white-space: nowrap;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .nav_movies{
+    color: #fff;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .nav_tv{
+    color: #fff;
+    text-align: left;
+    white-space: nowrap;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+   
+
+  img {
+    max-width: 100%;
+    
+    height: auto;
+  }
+  
+  .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* background-color: #111; */
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+  }
+  
+  .nav__black {
+    background-color: #111 !important;
+  }
+  @media (max-width: 920px) {
+    .row__posterLarge {
+      max-height: 220px;
+      max-width: 100%; 
+    }
+  }
+  
+  @media (max-width: 720px) {
+    .row__posterLarge {
+      max-height: 190px;
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 520px) {
+    .row__posterLarge {
+      max-height: 170px;
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav_left {
+      margin-top: 20px;
+    }
+  
+    .nav_left h5 {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .nav__avatar {
+      margin-top: 20px;
+    }
+  }

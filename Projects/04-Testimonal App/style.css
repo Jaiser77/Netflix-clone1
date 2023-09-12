@@ -1,0 +1,24 @@
+.btn{
+    background-color: black !important;
+    color: beige !important;
+     margin-bottom: 40px !important;
+    justify-content: center;
+    
+    align-items: center;
+}
+.btn:hover{
+    background-color:red;
+}
+button{
+    margin-right: 10px !important;
+}
+.btnClass{
+    margin-right: 10px;
+}
+.title{
+    margin-bottom: 40px !important;
+    margin-top: 30px !important;
+}
+.container {
+    padding: 30px !important;
+}

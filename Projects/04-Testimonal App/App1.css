@@ -1,0 +1,17 @@
+.btn{
+    background-color: black;
+    color: beige;
+  
+    justify-content: center;
+    
+    align-items: center;
+}
+.btn:hover{
+    background-color:red;
+}
+button{
+    margin-right: 10px;
+}
+.btnClass{
+    margin-right: 10px;
+}

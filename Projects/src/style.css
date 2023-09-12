@@ -1,0 +1,62 @@
+
+  .section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .underline{
+    height: 4px;
+    width: 10rem;
+    background-color: orange;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .bg-c-light{
+    background-color: rgb(230, 250, 158);
+  }
+  p{
+    font-size: 14px;
+    color:#cd5353;
+  }
+  .p1{
+   font-size: large;
+   -webkit-text-stroke: 0.75px #62f75a;
+   
+   color: darkgreen;
+   font-weight: 700;
+  }
+  h2{
+    -webkit-text-stroke: 0.75px #62f75a;
+     color: darkgreen !important;
+     font-weight: 700;
+  }
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 35%;
+  margin-top: 2.5%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.landing-container {
+  position: relative;
+
+}
+.trn{
+  background: transparent !important;
+}
+.carousel-container{
+ margin-top: -70px;
+}
+.navbar{
+  z-index: 99;
+}
+.nav-link {
+  /* Change to your font choice */
+  font-size: 16px; /* Adjust to your preferred font size */
+  font-weight: 500 !important; /* Adjust font weight as needed */
+  color: #ffffff !important; /* Adjust font color */
+  /* Add any other font styles as needed */
+}
